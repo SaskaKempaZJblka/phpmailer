@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wyślij email</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div id="main">
+		<h4 class="sent-notification"></h4>
+
+		<form action="sendEmail.php" method="POST" id="myForm"  enctype=multipart/form-data>
+			<h2>Wyślij Email</h2><br>
+			<label>Wybierz motyw e-maila</label><br>
+			<label>Motyw 1</label><input type="radio" name="mailStyle" value="style_1">
+			<label>Motyw 2</label><input type="radio" name="mailStyle" value="style_2"><br>
+			<label>Wybierz z ktorego konta chcesz wyslac emaila :</label>
+            <select name="accounts" id="accounts">
+                <option value="account_1">SzewDusta</option>
+                <option value="account_2">Testowy</option>
+                <option value="account_3">Konto 3</option>
+            </select>
+			<br><br>
+			<label>Adresat :</label>
+			<input type="text" name="adr_email" placeholder="Podaj adres email adresata" required><br><br>
+			<label>Temat :</label>
+			<input name="subject" type="text" placeholder=" Podaj temat">
+			<br><br>
+
+			<p>Wiadomość :</p>
+			<textarea name="body" rows="5" placeholder="Wpisz wiadomość" required></textarea>
+			<br><br>
+			<label>Zalączniki :  </label>
+			<input class = "myButton" type="file" name="file[]" multiple><br><br>
+			<input class = "myButton" type="submit" name="submit" value="Wyslij e-maila">
+			
+		</form>
+	</div>
+</body>
+</html>
