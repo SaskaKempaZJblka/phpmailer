@@ -30,14 +30,14 @@ if(!empty($_POST['accounts'])){
     $selected = $_POST['accounts'];
     if($selected == "account_1"){
         
-        $email = "szew.dusta2137@gmail.com";
-        $mail->Username = "szew.dusta2137@gmail.com";
-        $mail->Password = 'Mioushex123';
+        $email = "twojemail";
+        $mail->Username = "twojemail";
+        $mail->Password = 'haslo';
     }
     elseif($selected == "account_2"){
-        $email = "indyk.tak@gmail.com";
-        $mail->Username = "indyk.tak@gmail.com";
-        $mail->Password = 'Filip1234567890';
+        $email = "twojemail";
+        $mail->Username = "twojemail";
+        $mail->Password = 'haslo';
     }
     elseif($selected == "account_3"){
         $email = "ouditb@bLogint.top";
